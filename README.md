@@ -1,2 +1,22 @@
 # JavaLearning
 学习Java
+1 HelloWorld.java
+2 Dog.java
+3 Puppy.java
+4 Employee.java
+5 EmployeeTest.java
+6 PrimitiveTypeTest.java
+7 ZiDongZhuanHuan.java
+8 QiangZhiZhuanHuan.java
+9 Variable.java
+10 LocalVariable.java
+11 ObjectVariable.java
+12 ClassVariable.java
+13 ByteOperator.java
+14 Cycle.java
+15 Switch.java
+16 NumberMath.java
+17 CharacterClass.java
+18 StringClass.java
+19 StringBufferClass.java
+20 ArrayClass.java
