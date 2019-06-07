@@ -3,83 +3,83 @@ import java.util.Date;
 import java.util.Locale;
 
 
-//JavaÈÕÆÚÊ±¼ä
+//Javaæ—¥æœŸæ—¶é—´
 /*
- *java.util °üÌá¹©ÁË Date ÀàÀ´·â×°µ±Ç°µÄÈÕÆÚºÍÊ±¼ä¡£ Date ÀàÌá¹©Á½¸ö¹¹Ôìº¯ÊıÀ´ÊµÀı»¯ Date ¶ÔÏó¡£
- * µÚÒ»¸ö¹¹Ôìº¯ÊıÊ¹ÓÃµ±Ç°ÈÕÆÚºÍÊ±¼äÀ´³õÊ¼»¯¶ÔÏó¡£  Date()
- * µÚ¶ş¸ö¹¹Ôìº¯Êı½ÓÊÕÒ»¸ö²ÎÊı£¬¸Ã²ÎÊıÊÇ´Ó1970Äê1ÔÂ1ÈÕÆğµÄºÁÃëÊı¡£ Date(long millisec)
+ *java.util åŒ…æä¾›äº† Date ç±»æ¥å°è£…å½“å‰çš„æ—¥æœŸå’Œæ—¶é—´ã€‚ Date ç±»æä¾›ä¸¤ä¸ªæ„é€ å‡½æ•°æ¥å®ä¾‹åŒ– Date å¯¹è±¡ã€‚
+ * ç¬¬ä¸€ä¸ªæ„é€ å‡½æ•°ä½¿ç”¨å½“å‰æ—¥æœŸå’Œæ—¶é—´æ¥åˆå§‹åŒ–å¯¹è±¡ã€‚  Date()
+ * ç¬¬äºŒä¸ªæ„é€ å‡½æ•°æ¥æ”¶ä¸€ä¸ªå‚æ•°ï¼Œè¯¥å‚æ•°æ˜¯ä»1970å¹´1æœˆ1æ—¥èµ·çš„æ¯«ç§’æ•°ã€‚ Date(long millisec)
 */
 
 public class TimeClass {
 	public static void main(String[] args) {
-		//³õÊ¼»¯¶ÔÏó
-		Date date = new Date();
+	    //åˆå§‹åŒ–å¯¹è±¡
+	    Date date = new Date();
 		
-		//Ê¹ÓÃ toString() º¯ÊıÏÔÊ¾ÈÕÆÚÊ±¼ä
-		System.out.println("´òÓ¡Ê±¼ä£º" + date.toString());
+	    //ä½¿ç”¨ toString() å‡½æ•°æ˜¾ç¤ºæ—¥æœŸæ—¶é—´
+	    System.out.println("æ‰“å°æ—¶é—´ï¼š" + date.toString());
 		
-		//Ö±½Ó´òÓ¡dateµÈÍ¬ÓÚ date.toString()
+	    //ç›´æ¥æ‰“å°dateç­‰åŒäº date.toString()
 	    System.out.println(date);
 	    
-	    //Ê¹ÓÃprintf¸ñÊ½»¯ÈÕÆÚ: Ê¹ÓÃÁ½¸ö×ÖÄ¸¸ñÊ½£¬ËüÒÔ %t ¿ªÍ·²¢ÇÒÒÔÏÂÃæ±í¸ñÖĞµÄÒ»¸ö×ÖÄ¸½áÎ²¡£ ×ÖÄ¸°üÀ¨£ºc F D r T R
+	    //ä½¿ç”¨printfæ ¼å¼åŒ–æ—¥æœŸ: ä½¿ç”¨ä¸¤ä¸ªå­—æ¯æ ¼å¼ï¼Œå®ƒä»¥ %t å¼€å¤´å¹¶ä¸”ä»¥ä¸‹é¢è¡¨æ ¼ä¸­çš„ä¸€ä¸ªå­—æ¯ç»“å°¾ã€‚ å­—æ¯åŒ…æ‹¬ï¼šc F D r T R
 	    System.out.println("");
-	    System.out.println("------------¸ñÊ½»¯×Ö·û´®£º--------------------------");
-	    //cµÄÊ¹ÓÃ  
-	    System.out.printf("È«²¿ÈÕÆÚºÍÊ±¼äĞÅÏ¢£º%tc%n",date);          
-	    //fµÄÊ¹ÓÃ  
-	    System.out.printf("Äê-ÔÂ-ÈÕ¸ñÊ½£º%tF%n",date);  
-	    //dµÄÊ¹ÓÃ  
-	    System.out.printf("ÔÂ/ÈÕ/Äê¸ñÊ½£º%tD%n",date);  
-	    //rµÄÊ¹ÓÃ  
-	    System.out.printf("HH:MM:SS PM¸ñÊ½£¨12Ê±ÖÆ£©£º%tr%n",date);  
-	    //tµÄÊ¹ÓÃ  
-	    System.out.printf("HH:MM:SS¸ñÊ½£¨24Ê±ÖÆ£©£º%tT%n",date);  
-	    //RµÄÊ¹ÓÃ  
-	    System.out.printf("HH:MM¸ñÊ½£¨24Ê±ÖÆ£©£º%tR%n",date);
+	    System.out.println("------------æ ¼å¼åŒ–å­—ç¬¦ä¸²ï¼š--------------------------");
+	    //cçš„ä½¿ç”¨  
+	    System.out.printf("å…¨éƒ¨æ—¥æœŸå’Œæ—¶é—´ä¿¡æ¯ï¼š%tc%n",date);          
+	    //fçš„ä½¿ç”¨  
+	    System.out.printf("å¹´-æœˆ-æ—¥æ ¼å¼ï¼š%tF%n",date);  
+	    //dçš„ä½¿ç”¨  
+	    System.out.printf("æœˆ/æ—¥/å¹´æ ¼å¼ï¼š%tD%n",date);  
+	    //rçš„ä½¿ç”¨  
+	    System.out.printf("HH:MM:SS PMæ ¼å¼ï¼ˆ12æ—¶åˆ¶ï¼‰ï¼š%tr%n",date);  
+	    //tçš„ä½¿ç”¨  
+	    System.out.printf("HH:MM:SSæ ¼å¼ï¼ˆ24æ—¶åˆ¶ï¼‰ï¼š%tT%n",date);  
+	    //Rçš„ä½¿ç”¨  
+	    System.out.printf("HH:MMæ ¼å¼ï¼ˆ24æ—¶åˆ¶ï¼‰ï¼š%tR%n",date);
 	    System.out.println("");
 		
-	    //ÈÕÆÚ×ª»»·û£º
-	    //¶¨ÒåÈÕÆÚ¸ñÊ½µÄ×ª»»·û¿ÉÒÔÊ¹ÈÕÆÚÍ¨¹ıÖ¸¶¨µÄ×ª»»·ûÉú³ÉĞÂ×Ö·û´®¡£
-	    System.out.println("------------ÈÕÆÚ×ª»»·û£º--------------------------");
-	    //bµÄÊ¹ÓÃ£¬ÔÂ·İ¼ò³Æ  
-        String str=String.format(Locale.US,"Ó¢ÎÄÔÂ·İ¼ò³Æ£º%tb",date);       
-        System.out.println(str);                                                                              
-        System.out.printf("±¾µØÔÂ·İ¼ò³Æ£º%tb%n",date);  
-        //BµÄÊ¹ÓÃ£¬ÔÂ·İÈ«³Æ  
-        str=String.format(Locale.US,"Ó¢ÎÄÔÂ·İÈ«³Æ£º%tB",date);  
-        System.out.println(str);  
-        System.out.printf("±¾µØÔÂ·İÈ«³Æ£º%tB%n",date);  
-        //aµÄÊ¹ÓÃ£¬ĞÇÆÚ¼ò³Æ  
-        str=String.format(Locale.US,"Ó¢ÎÄĞÇÆÚµÄ¼ò³Æ£º%ta",date);  
-        System.out.println(str);  
-        //AµÄÊ¹ÓÃ£¬ĞÇÆÚÈ«³Æ  
-        System.out.printf("±¾µØĞÇÆÚµÄ¼ò³Æ£º%tA%n",date);  
-        //CµÄÊ¹ÓÃ£¬ÄêÇ°Á½Î»  
-        System.out.printf("ÄêµÄÇ°Á½Î»Êı×Ö£¨²»×ãÁ½Î»Ç°Ãæ²¹0£©£º%tC%n",date);  
-        //yµÄÊ¹ÓÃ£¬ÄêºóÁ½Î»  
-        System.out.printf("ÄêµÄºóÁ½Î»Êı×Ö£¨²»×ãÁ½Î»Ç°Ãæ²¹0£©£º%ty%n",date);  
-        //jµÄÊ¹ÓÃ£¬Ò»ÄêµÄÌìÊı  
-        System.out.printf("Ò»ÄêÖĞµÄÌìÊı£¨¼´ÄêµÄµÚ¼¸Ìì£©£º%tj%n",date);  
-        //mµÄÊ¹ÓÃ£¬ÔÂ·İ  
-        System.out.printf("Á½Î»Êı×ÖµÄÔÂ·İ£¨²»×ãÁ½Î»Ç°Ãæ²¹0£©£º%tm%n",date);  
-        //dµÄÊ¹ÓÃ£¬ÈÕ£¨¶şÎ»£¬²»¹»²¹Áã£©  
-        System.out.printf("Á½Î»Êı×ÖµÄÈÕ£¨²»×ãÁ½Î»Ç°Ãæ²¹0£©£º%td%n",date);  
-        //eµÄÊ¹ÓÃ£¬ÈÕ£¨Ò»Î»²»²¹Áã£©  
-        System.out.printf("ÔÂ·İµÄÈÕ£¨Ç°Ãæ²»²¹0£©£º%te%n",date);  
+	    //æ—¥æœŸè½¬æ¢ç¬¦ï¼š
+	    //å®šä¹‰æ—¥æœŸæ ¼å¼çš„è½¬æ¢ç¬¦å¯ä»¥ä½¿æ—¥æœŸé€šè¿‡æŒ‡å®šçš„è½¬æ¢ç¬¦ç”Ÿæˆæ–°å­—ç¬¦ä¸²ã€‚
+	    System.out.println("------------æ—¥æœŸè½¬æ¢ç¬¦ï¼š--------------------------");
+	    //bçš„ä½¿ç”¨ï¼Œæœˆä»½ç®€ç§°  
+            String str=String.format(Locale.US,"è‹±æ–‡æœˆä»½ç®€ç§°ï¼š%tb",date);       
+            System.out.println(str);                                                                              
+            System.out.printf("æœ¬åœ°æœˆä»½ç®€ç§°ï¼š%tb%n",date);  
+            //Bçš„ä½¿ç”¨ï¼Œæœˆä»½å…¨ç§°  
+            str=String.format(Locale.US,"è‹±æ–‡æœˆä»½å…¨ç§°ï¼š%tB",date);  
+            System.out.println(str);  
+            System.out.printf("æœ¬åœ°æœˆä»½å…¨ç§°ï¼š%tB%n",date);  
+            //açš„ä½¿ç”¨ï¼Œæ˜ŸæœŸç®€ç§°  
+            str=String.format(Locale.US,"è‹±æ–‡æ˜ŸæœŸçš„ç®€ç§°ï¼š%ta",date);  
+            System.out.println(str);  
+            //Açš„ä½¿ç”¨ï¼Œæ˜ŸæœŸå…¨ç§°  
+            System.out.printf("æœ¬åœ°æ˜ŸæœŸçš„ç®€ç§°ï¼š%tA%n",date);  
+            //Cçš„ä½¿ç”¨ï¼Œå¹´å‰ä¸¤ä½  
+            System.out.printf("å¹´çš„å‰ä¸¤ä½æ•°å­—ï¼ˆä¸è¶³ä¸¤ä½å‰é¢è¡¥0ï¼‰ï¼š%tC%n",date);  
+            //yçš„ä½¿ç”¨ï¼Œå¹´åä¸¤ä½  
+            System.out.printf("å¹´çš„åä¸¤ä½æ•°å­—ï¼ˆä¸è¶³ä¸¤ä½å‰é¢è¡¥0ï¼‰ï¼š%ty%n",date);  
+            //jçš„ä½¿ç”¨ï¼Œä¸€å¹´çš„å¤©æ•°  
+            System.out.printf("ä¸€å¹´ä¸­çš„å¤©æ•°ï¼ˆå³å¹´çš„ç¬¬å‡ å¤©ï¼‰ï¼š%tj%n",date);  
+            //mçš„ä½¿ç”¨ï¼Œæœˆä»½  
+            System.out.printf("ä¸¤ä½æ•°å­—çš„æœˆä»½ï¼ˆä¸è¶³ä¸¤ä½å‰é¢è¡¥0ï¼‰ï¼š%tm%n",date);  
+            //dçš„ä½¿ç”¨ï¼Œæ—¥ï¼ˆäºŒä½ï¼Œä¸å¤Ÿè¡¥é›¶ï¼‰  
+            System.out.printf("ä¸¤ä½æ•°å­—çš„æ—¥ï¼ˆä¸è¶³ä¸¤ä½å‰é¢è¡¥0ï¼‰ï¼š%td%n",date);  
+            //eçš„ä½¿ç”¨ï¼Œæ—¥ï¼ˆä¸€ä½ä¸è¡¥é›¶ï¼‰  
+            System.out.printf("æœˆä»½çš„æ—¥ï¼ˆå‰é¢ä¸è¡¥0ï¼‰ï¼š%te%n",date);  
 	    
         
-		//ÊÔÒ»ÏÂÆäËûµÄº¯Êı£º
+		//è¯•ä¸€ä¸‹å…¶ä»–çš„å‡½æ•°ï¼š
 	    System.out.println("");
-	    System.out.println("------------ÊÔÒ»ÏÂÆäËûµÄº¯Êı£º--------------------------");
-		System.out.println("´òÓ¡ºÁÃë£º" + date.getTime());
-		System.out.println("´òÓ¡Hash: " + date.hashCode());
+	    System.out.println("------------è¯•ä¸€ä¸‹å…¶ä»–çš„å‡½æ•°ï¼š--------------------------");
+            System.out.println("æ‰“å°æ¯«ç§’ï¼š" + date.getTime());
+	    System.out.println("æ‰“å°Hash: " + date.hashCode());
 		
-		//Ê¹ÓÃ SimpleDateFormat ¸ñÊ½»¯ÈÕÆÚ
-		//SimpleDateFormat ÊÇÒ»¸öÒÔÓïÑÔ»·¾³Ãô¸ĞµÄ·½Ê½À´¸ñÊ½»¯ºÍ·ÖÎöÈÕÆÚµÄÀà¡£SimpleDateFormat ÔÊĞíÄãÑ¡ÔñÈÎºÎÓÃ»§×Ô¶¨ÒåÈÕÆÚÊ±¼ä¸ñÊ½À´ÔËĞĞ¡£ÀıÈç£º
-		System.out.println("");
-		Date dNow = new Date();
-		SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
-		System.out.println("µ±Ç°Ê±¼ä£º" + ft.format(dNow));
+            //ä½¿ç”¨ SimpleDateFormat æ ¼å¼åŒ–æ—¥æœŸ
+	    //SimpleDateFormat æ˜¯ä¸€ä¸ªä»¥è¯­è¨€ç¯å¢ƒæ•æ„Ÿçš„æ–¹å¼æ¥æ ¼å¼åŒ–å’Œåˆ†ææ—¥æœŸçš„ç±»ã€‚SimpleDateFormat å…è®¸ä½ é€‰æ‹©ä»»ä½•ç”¨æˆ·è‡ªå®šä¹‰æ—¥æœŸæ—¶é—´æ ¼å¼æ¥è¿è¡Œã€‚ä¾‹å¦‚ï¼š
+	    System.out.println("");
+	    Date dNow = new Date();
+	    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+	    System.out.println("å½“å‰æ—¶é—´ï¼š" + ft.format(dNow));
 		
 		
 	}
