@@ -23,4 +23,11 @@
 - 21 TimeClass.java
 - 22 SleepClass.java
 - 23 CalendarClass.java
-- 24 
+- 24 RegexClass.java
+- 25 JavaMethod.java
+- 26 JavaStream.java
+- 27 JavaScanner.java
+- 28 JavaException.java
+- 29 JavaInheritance.java
+- 30 JavaSuper.java
+
